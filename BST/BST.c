@@ -69,7 +69,7 @@ void postorderTraverse(FILE *out, BSTObj *T)
   }
 }
 
-// print the leaves of the tree in inorder to OUT
+// print the only the leaves of the tree in order to OUT
 void inorderLeaves(FILE *out, BSTObj *T)
 {
   if (T == NULL)
@@ -149,4 +149,5 @@ void makeEmpty(BSTObj **pT)
   makeEmpty(&(*pT)->rightChild);
 
   free(*pT);
+  *pT = NULL;
 }
