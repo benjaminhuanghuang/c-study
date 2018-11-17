@@ -34,9 +34,14 @@ int main(int argc, char *argv[])
   // Test find
   int exist = find("a", T);
   if (exist)
-    printf("\n== found\n ");
+    printf("\n== found a \n ");
   else
-    printf("\n== not found\n ");
+    printf("\n== not found a\n ");
+
+  // Test inorderLeaves
+  printf("inorderLeaves traverse == \n");
+  inorderLeaves(stdout, T);
+  printf("\n== after traverse == \n");
 
   // Test treeHeight
   int height = treeHeight(T, 0);

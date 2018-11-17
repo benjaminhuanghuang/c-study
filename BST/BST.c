@@ -76,8 +76,17 @@ void inorderLeaves(FILE *out, BSTObj *T)
   { //if node is empty, return
     return;
   }
+  if (T->leftChild != NULL)
+  { 
+    inorderLeaves(out, T->leftChild);
+  }
+  if(T->rightChild != NULL)
+  {
+    inorderLeaves(out, T->rightChild);
+  }
   if (T->leftChild == NULL && T->rightChild == NULL)
   { //if node is leaf node, print its data
+    fprintf(out, "%s\n", T->term);
   }
 }
 
