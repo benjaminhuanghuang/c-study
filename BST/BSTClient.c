@@ -19,13 +19,21 @@ int main(int argc, char *argv[])
 
   printf("inserting a lot of nodes to build a tree \n");
 
-  insert("1", &T);
-  insert("4", &T);
-  insert("5", &T);
-  insert("2", &T);
-  insert("3", &T);
-  insert("7", &T);
-  insert("8", &T);
+  // insert("1", &T);
+  // insert("4", &T);
+  // insert("5", &T);
+  // insert("2", &T);
+  // insert("3", &T);
+  // insert("7", &T);
+  // insert("8", &T);
+
+  insert("aa", &T);
+  insert("bb", &T);
+  insert("cc", &T);
+  insert("nn", &T);
+  insert("mm", &T);
+  insert("zz", &T);
+  insert("qq", &T);
 
   printf("inorder traverse == \n");
   inorderTraverse(stdout, T);

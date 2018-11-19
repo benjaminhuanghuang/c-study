@@ -157,6 +157,9 @@ void makeEmpty(BSTObj **pT)
   makeEmpty(&(*pT)->leftChild);
   makeEmpty(&(*pT)->rightChild);
 
+  free((*pT)->term);
+  (*pT)->term = NULL;
+
   free(*pT);
   *pT = NULL;
 }
