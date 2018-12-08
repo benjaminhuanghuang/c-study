@@ -1,0 +1,33 @@
+++++++++++ NOTE THAT THERE ARE SOME ERRORS TO STDERR +++++++++++++++
+Hash table contents 
+bucket 0 
+    bucket list item = pear 
+    bucket list item = frog 
+    bucket list item = dog 
+bucket 1 
+    bucket list item = banana 
+    bucket list item = cat 
+bucket 2 
+    bucket list item = apple 
+great! found the members
+great! deleted pear
+great! pear is gone
+great! string is empty
+Hash table contents 
+bucket 0 
+    bucket list item = frog 
+    bucket list item = dog 
+bucket 1 
+    bucket list item = banana 
+    bucket list item = cat 
+bucket 2 
+    bucket list item = apple 
+Hash table contents 
+bucket 0 
+    bucket list item = frog 
+    bucket list item = dog 
+bucket 1 
+    bucket list item = banana 
+    bucket list item = cat 
+bucket 2 
+    bucket list item = apple 
