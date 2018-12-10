@@ -23,7 +23,7 @@ typedef struct bucketListObj  *bucketList;
 
 typedef struct bucketListObj {
     bucketList 	next;
-    char 	*item;
+    char 	item[];
 } bucketListObj;
 
 

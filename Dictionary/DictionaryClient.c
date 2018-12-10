@@ -5,6 +5,7 @@
  * test the hash table
  */
 
+
 int main()
 {
 	const int tableSize = 101; // set to 101 in assignment description
@@ -85,5 +86,15 @@ int main()
 		insert(H, sites[i]);
 	}
 
-	// printHashTable(stdout, H);
+	printHashTable(stdout, H);
 }
+
+
+// int main()
+// {
+// 	HashTableObj *H;
+// 	H = newHashTable(3);
+
+// 	insert(H, "dog");	
+// 	// printHashTable(stdout, H);
+// }
