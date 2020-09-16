@@ -8,10 +8,33 @@
 /*
   Quick    Bubble sort
 */
-int main()
+
+/*
+  Bubble sort
+*/
+void bubble_sort(int *nums, int n)
+{
+  /* perform the bubble sort */
+	for(int i=0;i<n;i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+			/* if a > b, swap the values */
+			if( nums[i] > nums[j] )
+			{
+				int temp = nums[i];
+				nums[i] = nums[j];
+				nums[j] = temp;
+			}
+		}
+	}
+}
+
+
+int demo_bubble_sort()
 {
 	int list[SIZE];
-	int a,b,temp;
+	int a;
 
 	/* seed the randomizer */
 	srand( (unsigned)time(NULL) );
@@ -25,20 +48,7 @@ int main()
 	}
 	putchar('\n');
 
-	/* perform the bubble sort */
-	for(a=0;a<SIZE-1;a++)
-	{
-		for(b=a+1;b<SIZE;b++)
-		{
-			/* if a > b, swap the values */
-			if( list[a] > list[b] )
-			{
-				temp = list[a];
-				list[a] = list[b];
-				list[b] = temp;
-			}
-		}
-	}
+	bubble_sort(list, SIZE);
 
 	/* display the sorted list */
 	printf("%d random values, sorted:\n",SIZE);
@@ -49,17 +59,12 @@ int main()
 	return(0);
 }
 
-#include <stdlib.h>
-#include <time.h>
-
-#define SIZE 100
-
 int compare(const void *a, const void *b)
 {
 	return( *(int *)a - *(int *)b);
 }
 
-int main()
+int demo_quick_sort()
 {
 	int list[SIZE];
 	int a;
@@ -86,6 +91,14 @@ int main()
 	putchar('\n');
 
 	return(0);
+}
+
+
+int main(){
+  demo_bubble_sort();
+  demo_quick_sort();
+
+  return 0;
 }
 
 
