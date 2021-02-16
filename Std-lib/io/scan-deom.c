@@ -8,7 +8,7 @@ int main()
 	
     char s[100];
     // %*c , * is used to indicate don’t assign value to name until you hit enter or scanf encounters ‘\n’.
-    scanf("%[^\n]%*c", &s);
+    scanf("%[^\n]%*c", s);
   	
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
     printf("Hello, World!\n");
